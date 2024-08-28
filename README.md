@@ -1,0 +1,1 @@
+- [Bubbling event]:(https://www.freecodecamp.org/espanol/news/evento-bubbling-en-javascript-como-funciona-la-propagacion-de-eventos-con-ejemplos/)

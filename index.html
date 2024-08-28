@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
-    <script type="module" src="app.js"></script>
+    <script type="module" src="app.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -22,45 +22,89 @@
       <div class="logo">
         <div><i class="fa-solid fa-bars fa-2xl"></i></div>
         <h1>
-          <i class="fa-solid fa-bottle-water fa-xs"></i>
+          <i class="fa-solid fa-droplet fa-xs"></i>
           <span>Acqualitica</span>
         </h1>
       </div>
+
       <div class="logout">
-        Logout <i class="fa-solid fa-right-from-bracket"></i>
+        <a href="/" class="logout-link">
+          <span>Logout</span>
+          <i class="fa-solid fa-right-from-bracket fa-xs"></i>
+        </a>
       </div>
     </header>
     <main class="container">
       <nav>
         <ul class="menu">
-          <li class="entity-navlink">
-            <div class="menu-icon"><i class="fa-solid fa-building"></i></div>
-            <p>Customers</p>
-          </li>
-          <li class="entity-navlink">
-            <div class="menu-icon"><i class="fa-solid fa-map"></i></div>
-            <p>Sites</p>
-          </li>
-          <li class="entity-navlink">
-            <div class="menu-icon"><i class="fa-solid fa-map-pin"></i></div>
-            <p>Points</p>
-          </li>
-          <li class="entity-navlink">
-            <div class="menu-icon"><i class="fa-solid fa-microchip"></i></div>
-            <p>Boards</p>
-          </li>
-          <li class="entity-navlink">
-            <div class="menu-icon"><i class="fa-solid fa-droplet"></i></div>
-            <p>Sensors</p>
-          </li>
+          <a href="/customers" class="menulink">
+            <li class="entity-navlink">
+              <div class="menu-icon"><i class="fa-solid fa-building"></i></div>
+              <p>Customers</p>
+            </li>
+          </a>
+          <a href="/sites" class="menulink">
+            <li class="entity-navlink">
+              <div class="menu-icon"><i class="fa-solid fa-map"></i></div>
+              <p>Sites</p>
+            </li>
+          </a>
+          <a href="/points" class="menulink">
+            <li class="entity-navlink">
+              <div class="menu-icon"><i class="fa-solid fa-map-pin"></i></div>
+              <p>Points</p>
+            </li>
+          </a>
+          <a href="/boards" class="menulink">
+            <li class="entity-navlink">
+              <div class="menu-icon"><i class="fa-solid fa-microchip"></i></div>
+              <p>Boards</p>
+            </li>
+          </a>
+          <a href="/sensors" class="menulink">
+            <li class="entity-navlink">
+              <div class="menu-icon">
+                <i class="fa-solid fa-wave-square"></i>
+              </div>
+              <p>Sensors</p>
+            </li>
+          </a>
         </ul>
       </nav>
-      <section class="entity-section">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos rerum quod laudantium accusamus, ratione commodi unde dicta ullam quaerat voluptates quisquam reiciendis quasi ab perspiciatis atque? Officiis aliquam minima praesentium error odio. Illum soluta incidunt accusantium molestiae ipsam maxime repellat.</p>
-      </section>
-      <section class="details-section">
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus exercitationem molestias accusantium, deserunt dolores nulla nihil neque? Nihil, quidem! Labore ducimus esse non voluptas similique accusantium in, vero, nostrum qui soluta quam, repellat nesciunt a ipsum autem voluptates blanditiis maxime at corrupti delectus nihil assumenda placeat unde aut. Alias, magnam.</p>
-      </section>
+      <section id="entity-section"></section>
+      <section id="details-section"></section>
     </main>
+    <template id="customers-page-template">
+      <p>Lorem, ipsum dolor.</p>
+    </template>
+    <template id="sites-page-template">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      </p>
+    </template>
+    <template id="points-page-template">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores
+        obcaecati in hic qui itaque facere fuga, dolore repudiandae alias iste.
+      </p>
+    </template>
+    <template id="boards-page-template">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut dignissimos
+        a explicabo totam impedit architecto nam. Porro distinctio voluptates
+        aut aspernatur, quidem, temporibus pariatur aliquid expedita rem
+        repellat blanditiis voluptas.
+      </p>
+    </template>
+    <template id="sensors-page-template">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam eaque
+        dolor debitis error quasi doloremque molestias, sapiente pariatur
+        exercitationem id quod fugit facilis nulla, reiciendis tenetur earum
+        tempore molestiae cupiditate perspiciatis. Eius fugiat, suscipit,
+        labore, perspiciatis sed exercitationem vitae quam molestiae velit et
+        tenetur! Iure at accusantium necessitatibus quaerat animi!
+      </p>
+    </template>
   </body>
 </html>
