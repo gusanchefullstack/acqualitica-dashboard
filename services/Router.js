@@ -41,8 +41,6 @@ export const Router = {
       const cache = document.getElementById("entity-section");
       cache.innerHTML = "";
       cache.appendChild(pageElement);
-      // window.screenX = 0;
-      // window.screenY = 0;
     }
   },
 };
